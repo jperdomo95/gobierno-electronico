@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Link from 'next/link'
 import styles from './page.module.css'
 
@@ -7,8 +6,9 @@ export default function Home() {
     <div className={styles.container}>
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Las TIC en el Gobierno Electrónico
+          Las TIC
         </h1>
+        <h2 className={styles.textcenter}>en el Gobierno Electrónico</h2>
 
         <p className={styles.description}>
           Las TIC no son buenas o malas en sí mismas, sino que son los usuarios quienes pueden hacer un uso bueno o malo de estas.
@@ -16,7 +16,7 @@ export default function Home() {
 
         <div className={styles.grid}>
           <Link href="/introduccion" className={styles.card}>
-            <h2>introducción &rarr;</h2>
+            <h2>Introducción &rarr;</h2>
           </Link>
 
           <Link href="/ventajas" className={styles.card}>
